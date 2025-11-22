@@ -17,7 +17,7 @@ int main() {
 			int top = layer;
 			int left = layer;
 			int bottom = n - 1 - layer;
-			int right = n - 1 - layer;
+			int right = m - 1 - layer;
 			for(int i = left; i <= right; i++) v.push_back(a[top][i]);
 			for(int i = top + 1; i <= bottom; i++) v.push_back(a[i][right]);
 			if(bottom > top) {
@@ -42,7 +42,7 @@ int main() {
     			cout << a[i][j] << " ";
 			}
 		}
-    cout << endl;
+		cout << endl;
 	}
     return 0;
 }
