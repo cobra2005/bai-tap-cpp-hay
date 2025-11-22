@@ -1,0 +1,5 @@
+void rotate(Iter first, Iter middle, Iter last) {
+  reverse(first, middle) [first, middle)
+  reverse(middle, last) [middle, last)
+  reverse(first, last) [first, last)
+}
